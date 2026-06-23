@@ -21,3 +21,7 @@ const priceResult = prices.filter(price => {
 const myArr = [2, 4, 3, 2, 1]
 const multiEvery = myArr.reduce((total, current) => total + (current * 2), 0)
 
+const users = [{age: 21}, {age: 63}, {age: 18}]
+const agesAverage = users.reduce(
+    (total, user) => (total + user.age), 0
+) / users.length
