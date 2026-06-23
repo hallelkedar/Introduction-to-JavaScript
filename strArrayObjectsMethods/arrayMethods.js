@@ -40,3 +40,14 @@ const resultN = numbersNew.filter(number => {
     if (!(number % 2)) return number
 }).map(number => number*2).reduce((total, number) => total+number)
 
+const items = [{ type: "fruit" }, { type: "veg" }, { type: "fruit" }]
+const groupBy = (items) => {
+    result = {}
+    for (const item of items) {
+        if (result[item.type]){
+            result[item.type].push(item)
+        } else {
+            result[item.type] = [item]
+        }
+    } return result
+}
