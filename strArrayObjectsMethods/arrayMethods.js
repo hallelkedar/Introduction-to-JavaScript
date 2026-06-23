@@ -27,4 +27,4 @@ const agesAverage = users.reduce(
 ) / users.length
 
 const numbersArr = [8, 4, 2, 1, 5]
-const numbersUpToDown = numbersArr.sort((a, b) => a - b)
+const numbersDownToUp = numbersArr.sort((a, b) => b - a)
