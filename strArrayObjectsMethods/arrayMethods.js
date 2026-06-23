@@ -31,3 +31,7 @@ const numbersDownToUp = numbersArr.sort((a, b) => b - a)
 
 const items = ['Hey', 'how', 'are', 'you']
 items.splice(1, 2)
+
+const nestedArr = [[2, 4, 6], 3, [2, 3]]
+const newArr = nestedArr.flat()
+
